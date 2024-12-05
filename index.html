@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Géneros Musicales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="encabezado">
+        <div class="logo-titulo">
+            <img src="./img/vinilo.png" alt="Logo de MusicSpace" class="logo girar">
+            <h1 class="titulo">MusicSpace</h1>
+        </div>
+        <nav class="categorias">
+            <ul id="lista-categorias"></ul>
+        </nav>
+        <div id="buscador" class="buscador">
+            <input type="text" id="nombre-artista" placeholder="🔍 Buscar artista">
+            <button onclick="buscarArtista()">Buscar</button>
+        </div>
+        <section class="barra-progreso">
+            <div id="progreso" class="progreso">0/10</div>
+        </section>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        
+        <div class="contenedor">
+            <section class="contenedor-artistas">
+                <h2> <center> </center></h2>
+                <div id="artistas" class="tarjetas-contenedor"></div>
+            </section>
+            <section class="contenedor-albumes">
+                <h2><center> </center></h2>
+                <div id="albumes" class="tarjetas-contenedor"></div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./js/funciones.js"></script>
+</body>
+</html>

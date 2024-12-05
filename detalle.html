@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle del Álbum</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/detalle.css">
+
+</head>
+<body>
+    <!-- Menú de Ruta -->
+    <header>
+        <nav class="menu-ruta">
+            <a href="index.html">Inicio</a> &gt;
+            <span id="nombre-album"></span>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <div class="detalle-producto">
+            <img id="imagen-album" alt="Imagen del álbum">
+            <div class="info-producto">
+                <h2 id="nombre-album-detalle"></h2>
+                <p><strong>Artista:</strong> <span id="artista-album"></span></p>
+                <p><strong>Precio:</strong> <span id="precio-album"></span></p>
+                <p id="descripcion-album"></p>
+                <div class="cantidad">
+                    <button id="boton-menos" disabled>-</button>
+                    <input type="number" id="cantidad-album" value="1" min="1" max="6" readonly>
+                    <button id="boton-mas">+</button>
+                </div>
+                <button id="agregar-carrito">Agregar al carrito</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="./js/detalles.js"></script>
+</body>
+</html>
